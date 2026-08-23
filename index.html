@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Rizqo Dwi Y.A</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons8-redux-50 (1).png">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tambahan Font Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Latar Belakang Abstrak -->
+  <div class="abstract-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+ <header class="navbar">
+  <div class="logo">Portofolio.</div>
+  
+  <!-- Tombol Menu Unik untuk HP -->
+  <div class="menu-toggle" id="mobile-menu">
+    <span class="bar long"></span>
+    <span class="bar short"></span>
+  </div>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section id="beranda" class="hero hidden">
+    <div class="hero-container">
+      <div class="hero-text">
+        <!-- Teks 'Hi, Saya' diam, nama akan diketik otomatis -->
+        <h1>Hi, Saya <span class="typing-text"></span><span class="cursor"></span></h1>
+        <p class="quote">"Menanam usaha hari ini, merajut karya di masa depan."</p>
+        <p>Saya seorang Full Stack Web Developer & UI/UX Designer yang percaya bahwa karya hebat tidak diciptakan dalam semalam. Masih terus belajar dan berproses untuk mengubah baris-baris kode sederhana menjadi solusi digital yang bermakna dan berdampak luas.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" id="btn-download">Download CV</a>
+          <a href="#projects" class="btn btn-outline">Lihat Proyek</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Pastikan foto kamu memiliki background transparan atau bentuk membulat agar lebih menyatu -->
+        <img src="img/gy.jpg" alt="Foto Rizqo" />
+      </div>
+    </div>
+  </section> 
+
+  <section class="statistik hidden">
+    <div class="statistik-container glass-card">
+      <div class="statistik-item">
+        <h2>10+</h2>
+        <p>Proyek Selesai</p>
+      </div>
+      <div class="statistik-item">
+        <h2>1+</h2>
+        <p>Tahun Pengalaman</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools" class="tools-section hidden">
+    <h2>Tools/Software</h2>
+    <p>Berikut ini beberapa tools yang biasa saya pakai untuk pembuatan Website, Aplikasi, ataupun Design.</p>
+    <div class="tools-grid">
+      <div class="tool-item glass-card"><img src="img/icons8-visual-studio-code-2019-96.png" alt="VS Code" /><p>VS Code</p></div>
+      <div class="tool-item glass-card"><img src="img/icons8-react-native-96.png" alt="React JS" /><p>React JS</p></div>
+      <div class="tool-item glass-card"><img src="img/icons8-canva-96.png" alt="Canva" /><p>Canva</p></div>
+      <div class="tool-item glass-card"><img src="img/figma-removebg-preview.png" alt="Figma" /><p>Figma</p></div>
+      <div class="tool-item glass-card"><img src="img/icons8-bootstrap-96.png" alt="Bootstrap" /><p>Bootstrap</p></div>
+      <div class="tool-item glass-card"><img src="img/node-removebg-preview.png" alt="Node Js" /><p>Node Js</p></div>
+      <div class="tool-item glass-card"><img src="img/icons8-html-5-96.png" alt="html" /><p>HTML5</p></div>
+      <div class="tool-item glass-card"><img src="img/android-studio-icon.webp" alt="Android Studio" /><p>Android Studio</p></div>
+      <div class="tool-item glass-card"><img src="img/icons8-css3-96.png" alt="Css" /><p>CSS</p></div>
+      <div class="tool-item glass-card"><img src="img/Screenshot_2026-08-23_212307-removebg-preview.png" alt="Laravel" /><p>Laravel</p></div>
+      <div class="tool-item glass-card"><img src="img/js-removebg-preview.png" alt="Java Script" /><p>JavaScript</p></div>
+      <div class="tool-item glass-card"><img src="img/ph-removebg-preview.png" alt="Php" /><p>PHP</p></div>
+      <div class="tool-item glass-card"><img src="img/java-removebg-preview.png" alt="Java" /><p>Java NetBeans</p></div>
+    </div>
+  </section>
+
+  <section id="ai-tools" class="ai-tools-section hidden">
+  <h2>Tools AI Saya</h2>
+  <p>Beberapa platform kecerdasan buatan yang saya manfaatkan untuk mempercepat penulisan kode, mencari inspirasi desain, hingga pembuatan aset media visual.</p>
+  
+  <div class="ai-grid">
+    <!-- Kartu AI 1 -->
+    <div class="ai-card">
+      <img src="img/ai1.jpeg" alt="ChatGPT" />
+      <h3>ChatGPT</h3>
+      <p>Logika & Debugging</p>
+    </div>
+
+    <!-- Kartu AI 2 -->
+    <div class="ai-card">
+      <img src="img/ai3.jpg" alt="GitHub Copilot" class="glitch-img"/>
+      <h3>Copilot</h3>
+      <p>Produktivitas & Otomatisasi Kerja</p>
+    </div>
+
+    <!-- Kartu AI 3 -->
+    <div class="ai-card">
+      <img src="img/ai6.jpeg" alt="Midjourney" class="glitch-img"/>
+      <h3>Midjourney</h3>
+      <p>Inspirasi UI/UX & Aset</p>
+    </div>
+
+    <!-- Kartu AI 4 -->
+    <div class="ai-card">
+      <img src="img/ai2.webp" alt="Doratoon" class="glitch-img" />
+      <h3>Gemini</h3>
+      <p>Riset Multi-modal & Otomatisasi Tugas</p>
+    </div>
+
+    <!-- Kartu AI 5 -->
+    <div class="ai-card">
+      <img src="img/ai5.jpeg" alt="v0 by Vercel" class="glitch-img"/>
+      <h3>Deepseek</h3>
+      <p> Penalaran Kompleks & Coding Akurat </p>
+    </div>
+
+    <!-- Kartu AI 3 -->
+    <div class="ai-card">
+      <img src="img/ai10.webp" alt="Midjourney" class="glitch-img"/>
+      <h3>BlackBox Ai</h3>
+      <p>Pencarian Kode & Solusi Debugging </p>
+    </div>
+
+    <!-- Kartu AI 4 -->
+    <div class="ai-card">
+      <img src="img/ai9.jpeg" alt="Doratoon" class="glitch-img" />
+      <h3>Kimi</h3>
+      <p>Analisis Dokumen Panjang & Riset </p>
+    </div>
+
+    <!-- Kartu AI 5 -->
+    <div class="ai-card">
+      <img src="img/ai8.jpeg" alt="v0 by Vercel" class="glitch-img"/>
+      <h3>Clode</h3>
+      <p>Penulisan Kreatif & Analisis Kode</p>
+    </div>
+  </div>
+</section>
+
+  <section id="projects" class="projects-section hidden">
+    <h2>Proyek Saya</h2>
+    <p>Berikut beberapa proyek yang pernah saya kerjakan, mulai dari desain hingga pengembangan web.</p>
+    <div class="projects-grid">
+      <div class="project-card glass-card">
+        <img src="proyek/proyek1.webp" alt="Proyek 1" />
+        <h3>EduSmart Portalk</h3>
+        <p>Sistem informasi dan portal akademik sekolah terintegrasi. Dibangun menggunakan HTML, CSS, dan JavaScript vanilla untuk performa cepat.</p>
+      </div>
+      <div class="project-card glass-card">
+        <img src="proyek/proyek2.webp" alt="Proyek 2" />
+        <h3>DevWorkspace Dashboard</h3>
+        <p>Platform manajemen proyek dan kolaborasi tim berbasis web. Menampilkan manajemen tugas interaktif dengan tata letak modern.</p>
+      </div>
+      <div class="project-card glass-card">
+        <img src="proyek/proyek3.webp" alt="Proyek 3" />
+        <h3>NexaLanding Responsive UI</h3>
+        <p>Landing page modern dengan komponen ReactJS. Menggunakan Tailwind CSS untuk tampilan responsif sempurna.</p>
+      </div>
+      <div class="project-card glass-card">
+        <img src="proyek/proyek4.webp" alt="Proyek 4" />
+        <h3>OmniVibe E-Commerce</h3>
+        <p>Aplikasi web multi-halaman dinamis menggunakan Vite dan Bootstrap. Memiliki transisi halaman yang mulus.</p>
+      </div>
+      <div class="project-card glass-card">
+        <img src="proyek/proyek5.webp" alt="Proyek 5" />
+        <h3>EliteFolio Agency</h3>
+        <p>Landing page portofolio profesional. Memanfaatkan Bootstrap 5 untuk animasi halus dan galeri karya interaktif.</p>
+      </div>
+      <div class="project-card glass-card">
+        <img src="proyek/proyek6.webp" alt="Proyek 6" />
+        <h3>CryptoVerse Analytics</h3>
+        <p>Dasbor pemantauan aset digital. Mengintegrasikan visualisasi data infografis modern dengan desain dark mode futuristik.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman" class="pengalaman-section hidden">
+  <h2>Dokumentasi</h2>
+  <p>Beberapa dokumentasi kegiatan, proses desain, dan bukti nyata dari perjalanan karya saya.</p>
+  
+  <div class="masonry-grid">
+    <!-- Item 1 (Bisa diganti fotonya dengan posisi potrait/landscape) -->
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm0.jpeg" alt="Dokumentasi 1" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm1.jpeg" alt="Dokumentasi 2" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm2.jpeg" alt="Dokumentasi 3" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm3.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm12.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm13.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm4.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm11.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm8.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm5.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm7.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <div class="masonry-item glass-card">
+      <img src="dokumentasi/dm6.jpeg" alt="Dokumentasi 4" />
+      <div class="masonry-overlay">
+        <span>Lihat Detail</span>
+      </div>
+    </div>
+
+    <!-- Tambahkan item lainnya sesuka kamu di sini -->
+  </div>
+</section>
+
+  <section id="contact" class="contact-section hidden">
+    <h2>Kontak</h2>
+    <p>Mari terhubung dan berkolaborasi.</p>
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form glass-card">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="pesan" placeholder="Pesan Anda" rows="5" required></textarea>
+      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-name">© 2026 Rizqo Dwi Y.A</div>
+    <ul class="footer-nav">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#projects">Proyek</a></li>
+    </ul>
+    <div class="footer-icons">
+      <a href="https://instagram.com/rizkdwiy.a" target="_blank"><img src="img/icons8-instagram-48.png" alt="Instagram" /></a>
+      <a href="https://youtube.com/Rizqo dwi Y.A" target="_blank"><img src="img/icons8-youtube-48.png" alt="YouTube" /></a>
+      <a href="https://tiktok.com/@rizzkdwiy.118" target="_blank"><img src="img/icons8-tiktok-48.png" alt="Tiktok" /></a>
+      <a href="https://github.com/rizqocr7-ui" target="_blank"><img src="img/icons8-github-48.png" alt="GitHub" /></a>
+    </div>
+  </footer>
+
+  <!-- Modal Monyet Lucu -->
+<div id="cv-modal" class="modal-overlay">
+  <div class="modal-content glass-card">
+    <span class="close-modal">&times;</span>
+    <!-- Pastikan kamu punya foto monyet lucu di folder img dengan nama monyet.jpg -->
+    <img src="img/monyet.jpeg" alt="Monyet Lucu" class="monyet-img" />
+    <h3>Eits! 🙈</h3>
+    <p>Belum ada CV nih karena belum di-upload. Sabar ya, nanti di-update! 😆</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
