@@ -108,3 +108,61 @@ window.addEventListener('click', (e) => {
     cvModal.classList.remove('show-modal');
   }
 });
+
+
+// ==========================================
+// LOGIKA WIDGET BUKA-TUTUP (GEAR, MUSIK, BAHASA)
+// ==========================================
+
+// 1. Logika Buka-Tutup Menu (Gear)
+const widgetContainer = document.getElementById('widget-container');
+const mainToggle = document.getElementById('main-toggle');
+
+// Pastikan tombol utama benar-benar ada sebelum menjalankan perintah
+if (mainToggle && widgetContainer) {
+  mainToggle.addEventListener('click', () => {
+    widgetContainer.classList.toggle('active');
+  });
+}
+
+// 2. Logika Musik
+const musicToggle = document.getElementById('music-toggle');
+const musicSvg = document.getElementById('music-svg');
+const bgMusic = document.getElementById('bg-music');
+let isPlaying = false;
+
+if (musicToggle && bgMusic) {
+  musicToggle.addEventListener('click', () => {
+    if (isPlaying) {
+      bgMusic.pause();
+      if(musicSvg) musicSvg.classList.remove('spinning'); 
+    } else {
+      bgMusic.play();
+      if(musicSvg) musicSvg.classList.add('spinning'); 
+    }
+    isPlaying = !isPlaying;
+  });
+}
+
+// 3. Logika Translate Bahasa (Gambar Bendera)
+const langToggle = document.getElementById('lang-toggle');
+const langIcon = document.getElementById('lang-icon');
+let currentLang = 'id'; 
+const translatableElements = document.querySelectorAll('.translatable');
+
+if (langToggle && langIcon) {
+  langToggle.addEventListener('click', () => {
+    currentLang = currentLang === 'id' ? 'en' : 'id';
+    
+    // Ganti foto bendera (pastikan nama file di komputermu sama persis)
+    langIcon.src = currentLang === 'id' ? 'pendidikan/id-flag.jpg' : 'pendidikan/en-flag.png';
+
+    // Ubah teks yang punya class "translatable"
+    translatableElements.forEach(el => {
+      const newText = el.getAttribute(`data-${currentLang}`);
+      if(newText) {
+        el.textContent = newText;
+      }
+    });
+  });
+}
